@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: ashok
+    names: ashok
     cource: devscepos
   tasks:
   - name: printing the variables
