@@ -6,12 +6,13 @@
     ansible.builtin.package:
       name: nginx
       state: present
+
   - name: install mysql
     ansible.builtin.package:
      name: mysql
      state: present
-  - name: starting nginx
 
+  - name: starting mysql
     ansible.builtin.service:
       name: nginx
       state: started
