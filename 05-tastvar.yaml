@@ -1,0 +1,12 @@
+- name: tast level variables
+  hosts: local
+  connection: local
+  vars:
+    name: ashok
+    cource: devscepos
+  tasks:
+  - name: printing the variables
+    vars:
+      cource: salesforce
+    ansible.builtin.debug:
+      msg: "i am {{ name }}, i am learining {{cource}}"

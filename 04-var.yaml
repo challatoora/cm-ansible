@@ -4,7 +4,7 @@
   vars:
     name: murali 
     training: devscepos 
-  tasks:
+  tasks:  
     - name: printing variables
       ansible.builtin.debug:
         msg: "iam {{ name }} learining {{training}}"
