@@ -12,12 +12,13 @@
      name: mysql
      state: present
 
-  - name: starting mysql
+  - name: starting nginx
     ansible.builtin.service:
       name: nginx
       state: started
       enable: yes
 
+  - name: starting mysql
     ansible.builtin.service:
       name: mysql
       state: started
@@ -26,4 +27,4 @@
   
   - name: printing ngix is done
     ansible.builtin.debug:
-      msg: "installing ngix and mysql is succesfull...thanks"
+      msg: "installing ngix and mysql and starated is succesfull...thanks"
