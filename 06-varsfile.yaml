@@ -1,0 +1,11 @@
+- name: tast level variables
+  hosts: local
+  connection: local
+  vars_files:
+  - cource.yaml
+  tasks:
+  - name: printing the variables
+    vars:
+      cource: salesforce
+    ansible.builtin.debug:
+      msg: "i am {{ peru }}, i am learining {{cource}}"
