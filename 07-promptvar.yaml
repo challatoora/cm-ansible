@@ -11,5 +11,6 @@
     private: false
 
   tasks:
-  ansible.builtin.debug:
-   msg: iam {{ name }} {{ pwd }}
+  - name : murali
+    ansible.builtin.debug:
+      msg: iam {{ name }} {{ pwd }}
