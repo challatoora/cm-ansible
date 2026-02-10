@@ -9,4 +9,4 @@
     vars:
       cource: salesforce
     ansible.builtin.debug:
-      msg: "i am {{ name }}, i am learining {{cource}}"
+      msg: "i am {{ peru }}, i am learining {{cource}}"
