@@ -6,6 +6,12 @@
     ansible.builtin.package:
       name: nginx
       state: present
+  - name: install mysql
+    ansible.builtin.package:
+     name: mysql
+     state: present
+  
+
   
   - name: printing ngix is done
     ansible.builtin.debug:
