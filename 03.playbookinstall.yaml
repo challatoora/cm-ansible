@@ -10,7 +10,17 @@
     ansible.builtin.package:
      name: mysql
      state: present
-  
+  - name: starting nginx
+
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enable: yes
+
+    ansible.builtin.service:
+      name: mysql
+      state: started
+      enable: yes
 
   
   - name: printing ngix is done
