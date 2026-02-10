@@ -6,11 +6,11 @@
     prompt: pls enter u r name
     private: false
 
-  - name: pwd
-    prompt: pls enter u r pwd
+  - name: pw
+    prompt: pls enter u r pw
     private: false
 
   tasks:
   - name : murali
     ansible.builtin.debug:
-      msg: iam {{ name }} {{ pwd }}
+      msg: "iam {{ name }}, {{ pw }}"
