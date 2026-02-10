@@ -1,0 +1,27 @@
+- name: "ashok"
+  dob: "10-879-90"
+  mobile: 12345678
+  address:
+  - type: "per"
+    flatno: 105
+    street: "nagar"
+    city: "karnthi"
+    
+  - type: "temp"
+    flatno: 105
+    street: "nagar"
+    city: "karnthi"
+
+- name: "murali"
+  dob: "10-879-90"
+  mobile: 12345678
+  address:
+  - type: "per"
+    flatno: 105
+    street: "nagar"
+    city: "karnthi"
+    
+  - type: "temp"
+    flatno: 105
+    street: "nagar"
+    city: "karnthi"

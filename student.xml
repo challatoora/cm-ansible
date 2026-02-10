@@ -1,0 +1,9 @@
+<student>
+    <name>ashok</name>
+    <ph>6302</ph>
+    <id>123</id>
+    <addsress>
+        <flotno>10234</flotno>
+        <area>nagar</area>
+    </address>
+</student>
