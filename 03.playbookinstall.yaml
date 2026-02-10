@@ -16,13 +16,13 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      enable: yes
+      enabled: yes
 
   - name: starting mysql
     ansible.builtin.service:
       name: mysql
       state: started
-      enable: yes
+      enabled: yes
 
   
   - name: printing ngix is done
