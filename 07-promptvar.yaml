@@ -13,4 +13,4 @@
   tasks:
   - name : murali
     ansible.builtin.debug:
-      msg: "iam {{ name }}, {{ pw }}"
+      msg: "iam {{ username }}, {{ pw }}"
