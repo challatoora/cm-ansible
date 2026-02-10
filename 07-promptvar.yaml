@@ -1,0 +1,15 @@
+- name: please enter username and password
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: pls enter u r name
+    private: false
+
+  - name: pwd
+    prompt: pls enter u r pwd
+    private: false
+
+  tasks:
+  ansible.builtin.debug:
+   msg: iam {{ name }} {{ pwd }}
