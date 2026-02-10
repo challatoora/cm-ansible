@@ -1,0 +1,11 @@
+- name: Installing...nginx
+  hosts: web
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+    name: nginx
+    state: present
+  
+  - name: printing ngix is done
+    ansible.builtin.debug:
+      msg: "installing ngix is succesfull...thanks"
