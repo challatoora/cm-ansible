@@ -1,11 +1,10 @@
-- name: variables
+- name: play variables
   hosts: local
   connection: local
-
   vars:
-   name: murali 
-   training: devscepos 
-  task:
+    name: murali 
+    training: devscepos 
+  tasks:
     - name: printing variables
       ansible.builtin.debug:
         msg: "iam {{ name }} learining {{training}}"
