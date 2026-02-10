@@ -3,8 +3,8 @@
   tasks:
   - name: install nginx
     ansible.builtin.package:
-    name: nginx
-    state: present
+      name: nginx
+      state: present
   
   - name: printing ngix is done
     ansible.builtin.debug:
