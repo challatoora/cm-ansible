@@ -15,4 +15,4 @@
   
   - name: printing ngix is done
     ansible.builtin.debug:
-      msg: "installing ngix is succesfull...thanks"
+      msg: "installing ngix and mysql is succesfull...thanks"
