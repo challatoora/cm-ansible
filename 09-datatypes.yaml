@@ -1,6 +1,6 @@
 - name : datatypes in aws
   hosts : local
-  connections: local
+  connection: local
   vars:
     course: aws course
     duration: 140
