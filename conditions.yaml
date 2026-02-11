@@ -1,0 +1,8 @@
+- name: conditions in ansible
+  hosts: local
+  condition: local
+  tasks:
+  - name: checking the num range
+    ansible,builtin.debug:
+      msg: yes the num is greter then {{ number }}
+    when: number > 10
