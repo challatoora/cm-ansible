@@ -4,5 +4,5 @@
   become: yes
   tasks:
   - name: printing the i/p which is given in CLM
-    ansible.builtin.bebug:
+    ansible.builtin.debug:
       msg: my name is {{ NAME }}
