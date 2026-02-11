@@ -1,10 +1,21 @@
-- name: conditions in ansible
-  hosts: local
-  connection: local
-  # vars:
-  #   number: 11
-  tasks:
-  - name: checking the num range
-    ansible.builtin.debug:
-      msg: yes the num is greter then {{ number }}
-    when: number > 10
+# - name: conditions in ansible
+#   hosts: local
+#   connection: local
+#   # vars:
+#   #   number: 11
+#   tasks:
+#   - name: checking the num range
+#     ansible.builtin.debug:
+#       msg: yes the num is greter then {{ number }}
+#     when: number > 10
+
+  - name : conditions in ansible
+    hosts: local
+    connection: local
+    vars:
+      name: murali
+    tasks:
+    - name: print the name 
+      ansible.builtin.debug:
+      msg : yes it is equal to {{ name }}
+    when: name = murali
