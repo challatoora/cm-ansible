@@ -19,4 +19,4 @@
     - name: print the name 
       ansible.builtin.debug:
         msg : yes it is equal to {{ names }}
-      when: names = ashok
+      when: names == "ashok"
