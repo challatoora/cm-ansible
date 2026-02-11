@@ -1,0 +1,12 @@
+- name: advacnce loops
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: advacnce loo[s in ansible]
+    ansible.builtin.debug:
+    name: {{ item.name }}
+    addresss: {{item.addresss}}
+    loop:
+    - {name: "ashok", addresss: "jeevakona"}
+    - {name: "murali", addresss: "nagar"}
