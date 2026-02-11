@@ -13,9 +13,10 @@
     hosts: local
     connection: local
     vars:
-      is_live: true
+      #is_live: true
+      names: ashok
     tasks:
     - name: print the name 
       ansible.builtin.debug:
-        msg : yes it is equal to {{ is_live }}
-      when: is_live
+        msg : yes it is equal to {{ names }}
+      when: names = ashok
