@@ -18,4 +18,4 @@
     - name: print the name 
       ansible.builtin.debug:
       msg : yes it is equal to {{ name }}
-    when: name = murali
+    when: name == murali
