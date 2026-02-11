@@ -1,6 +1,6 @@
 - name: conditions in ansible
   hosts: local
-  condition: local
+  connection: local
   tasks:
   - name: checking the num range
     ansible,builtin.debug:
