@@ -1,0 +1,8 @@
+- name: takeing inputs from args
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: printing the i/p which is given in CLM
+    ansible.builtin.bebug:
+      msg: my name is {{ NAME }}
