@@ -17,5 +17,5 @@
     tasks:
     - name: print the name 
       ansible.builtin.debug:
-      msg : yes it is equal to {{ name }}
-    when: is_live
+        msg : yes it is equal to {{ name }}
+      when: is_live
