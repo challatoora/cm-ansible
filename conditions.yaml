@@ -13,9 +13,9 @@
     hosts: local
     connection: local
     vars:
-      name: murali
+      is_live: true
     tasks:
     - name: print the name 
       ansible.builtin.debug:
       msg : yes it is equal to {{ name }}
-    when: name == murali
+    when: is_live
