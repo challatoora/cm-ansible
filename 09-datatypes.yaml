@@ -11,11 +11,11 @@
     - linux
     - shell
     - aws
-    tasks:
-    - name : printing the data types
-      ansible.builtin.debug:
-        msg: | 
-         course {{ course }}
-         duration {{ duration }}
-         details {{ details }}
-         topics {{ topics }}
+  tasks:
+  - name : printing the data types
+    ansible.builtin.debug:
+      msg: | 
+        course {{ course }}
+        duration {{ duration }}
+        details {{ details }}
+        topics {{ topics }}
