@@ -5,4 +5,4 @@
   tasks:
   - name: printing the i/p which is given in CLM
     ansible.builtin.debug:
-      msg: my name is {{ NAME }}
+      msg: "my name is {{ NAME }}"
