@@ -10,3 +10,9 @@
     loop:
     - nginx
     - mysql
+
+  - name: satrted the sertver
+    ansible.builtin.service:
+      name: nginx
+      state: present
+      
