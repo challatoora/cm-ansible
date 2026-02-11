@@ -11,3 +11,12 @@
       ansible.builtin.debug:
         msg: print the {{ storage }}
 
+    - name : name of the scripts
+      ansible.builtin.shell: ls -ltr > files.txt
+      register: storage
+
+    - name: scripts
+      ansible.builtin.debug:
+        msg: print the {{ storage }}
+
+
