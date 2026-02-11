@@ -1,0 +1,21 @@
+- name : datatypes in aws
+  hosts : local
+  connections: local
+  vars:
+    course: aws course
+    duration: 140
+    details:
+      time: 4
+      trainername: ashok
+    topics:
+    - linux
+    - shell
+    - aws
+    tasks:
+    - name : printing the data types
+      ansible.builtin.debug:
+        msg: | 
+         course {{ course }}
+         duration {{ duration }}
+         details {{ details }}
+         topics {{ topics }}
