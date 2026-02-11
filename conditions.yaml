@@ -12,9 +12,9 @@
   - name : conditions in ansible
     hosts: local
     connection: local
-    vars:
-      #is_live: true
-      names: ashok
+    # vars:
+    #   #is_live: true
+    #   names: ashok
     tasks:
     - name: print the name 
       ansible.builtin.debug:
