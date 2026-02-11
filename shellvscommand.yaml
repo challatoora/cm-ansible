@@ -1,0 +1,13 @@
+- name: shell commands
+  hosts: local
+  connection: local
+
+  tasks:
+    - name : name of the script
+      ansible.builtin.command: ls -ltr
+      register: storage
+
+    - name: scripts
+      ansible.builtin.debug:
+        msg: print the {{ storage }}
+        
