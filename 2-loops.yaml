@@ -8,5 +8,5 @@
       names: "{{ item.names }}"
       addresss: "{{item.addresss}}"
     loop:
-    - {names: "ashok", addresss: "jeevakona"}
-    - {names: "murali", addresss: "nagar"}
+    - { names: "ashok", addresss: "jeevakona"}
+    - { names: "murali", addresss: "nagar"}
