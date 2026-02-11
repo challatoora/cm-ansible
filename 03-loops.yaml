@@ -1,0 +1,12 @@
+- name: installing sf using loops
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+  - name: isbtalling ngix
+    ansible.builtin.package:
+      name: "{{ item }}"
+    loop:
+    - nginx
+    - mysql
