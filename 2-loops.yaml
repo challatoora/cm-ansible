@@ -6,7 +6,7 @@
   - name: advacnce loo[s in ansible]
     ansible.builtin.debug:
       names: "{{ item.names }}"
-      addresss: "{{item.addresss}}"
+      addresss: "{{ item.addresss }}"
     loop:
     - { names: "ashok", addresss: "jeevakona"}
    # - { names: "murali", addresss: "nagar"}
