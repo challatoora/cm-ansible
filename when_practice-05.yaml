@@ -7,4 +7,4 @@
   - name: checking the memory
     ansible.builtin.debug:
       msg: " yes ,Server has more than 1GB RAM"
-    when: ansible_memtotal_mb > 1024
+    when: ansible_memtotal_mb > 2048
