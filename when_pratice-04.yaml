@@ -1,0 +1,11 @@
+- name: creating user
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+  - name: creating user
+    ansible.builtin.user:
+      name: ashok
+      state: present
+    when: "'local' in group_names"
