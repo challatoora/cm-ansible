@@ -1,0 +1,13 @@
+- name : installing pacekges on varibale
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    names: mqsql
+    states: present
+
+  tasks:
+  - name: installing mqsql
+    ansible.builtin.package:
+      name : "{{ names }}"
+      state : "{{ states }}"
