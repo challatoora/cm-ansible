@@ -6,12 +6,18 @@
   tasks:
   - name : installing packages
     ansible.builtin.package:
-      name: "{{ item }}"
-      state: present
+    #   name: "{{ item }}"
+    #   state: present
+    # loop:
+    # - nginx
+    # - mysql
+    # - curl
+    # - git
+    # - wget
+      name: "{{ name.item }}"
+      state: "{{ state.item }}"
+
     loop:
-    - nginx
-    - mysql
-    - curl
-    - git
-    - wget
-    
+    - { name : mysql, state : absent }
+    - { name : tree, state : present }
+
