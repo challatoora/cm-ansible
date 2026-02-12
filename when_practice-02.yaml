@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    names: mqsql
+    names: mysql
     states: present
 
   tasks:
