@@ -1,0 +1,18 @@
+- name : installing ans starting the ngix
+  hosts : local
+  connection : local
+  become: yes
+
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+    register: out
+
+  - name: starting the nginx
+    ansible.builtin.service:
+      name : nginx
+      state: started
+    when: out.changed
+
